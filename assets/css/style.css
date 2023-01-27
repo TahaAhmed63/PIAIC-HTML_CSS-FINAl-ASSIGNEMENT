@@ -100,7 +100,7 @@ h1{
     font-size: 5rem;
     font-weight: 900;
     line-height: 1.5;
-    color: #32a925;
+    color: #32a925 !important;
 }
 #advantages >p {
     color:#3f464b;
@@ -110,7 +110,7 @@ h1{
 
 }
 #advantages>h1:before {
-    color: #000000;
+    color: #0d0d0d;
     content: "OUR ";
   }
 .fa-brands, .fab {
@@ -123,6 +123,9 @@ h1{
 }
 .bg-dark{
     padding: 1px !important;
+}
+.collapse:not(.show) {
+  display: none;
 }
 .navbar-nav{
   float: right;
@@ -138,7 +141,7 @@ h1{
 }
 .nav-link:hover{
       
-  
+  color: #1cab1e !important;
 }
 .nav-link{
     color: black;
@@ -303,7 +306,7 @@ h1{
      
 }
 #About>h1:before {
-    color: #2b2b2b;
+    color: #000000;
     content: "ABOUT ";
   }
 .about-h1 {
@@ -404,7 +407,9 @@ h1{
    margin: 10px;
 }
 
-
+.h1-portfolio{
+  color: #fff;
+}
 .img-portfolio-1 {
     width: 190px;
     height: 180px;
@@ -422,7 +427,7 @@ h1{
 }
 
 #process  h1:before{
-   color: #000;
+   color: rgb(0, 0, 0);
    content: "OUR";
   margin: 10px;
 }
@@ -746,7 +751,7 @@ li:last-child .process-box::after {
 }
 
 .contant-h1{
-  color: #fff;
+  color: #fff !important;
   font-size: 2.5rem;
 }
 .btn-secondary{
@@ -804,18 +809,135 @@ html {
     overflow-x: hidden;
     scroll-behavior: smooth
 }
+.p-portfolio{
+  color: #fff;
+  text-align: center;
+
+}
 
 @media screen and (max-width: 768px) {
     html {
         font-size:15px
     }
+    .navbar-custom{
+      left: 8%;
+
+    }
+    li .process-box::after {
+      display: none;
+    }
+    .i-frame{
+      width: 100px;
+      height: 100px;
+      border: 0;
+    }
+    .h4-reviews {
+      bottom: 3rem;
+      position: relative;
+      right: -1rem;
+  }
+    .review-img {
+      right: 17rem;
+      width: 53px;
+      height: 66px;
+      position: relative;
+  }
+  .p-reviews {
+    text-align: initial;
+    position: relative;
+    bottom: 2.2rem;
+    left: 1rem;
+}
+    .p-portfolio {
+      color: #fff;
+      font-size: small;
+      text-align: center;
+      margin: 3px 37px;
+  }
+  .process-box {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid gray;
+    height: 134px;
+    width: 134px;
+    border-radius: 50%;
+}
+.box-info {
+  text-align: center;
+  margin: 16px 9px 18px -42px;
+  font-size: 10px;
+}
+.process-img {
+  width: 57px;
+  height: 55px;
+  left: 2.6em;
+  position: relative;
+  top: 1.2em;
+}
+    .navbar-nav{
+      left: 0;
+      float: left;
+  }
+  #portfolio{
+    padding: 0px;
+
+
+  }
+  .list-unstyled {
+  left: 0;
+  
+  }
+  .img-portfolio-1 {
+    width: 70px;
+    height: 80px;
+    margin: 0 -3px;
+}
+.container-image {
+  margin: 5px 7px;
+}
+.img-portfolio-2 {
+  width: 70px;
+  height: 80px;
+  margin: 0 -3px;
+}
+  #advantages >p {
+      color: #3f464b;
+      text-align: center;
+      margin: 0  ;
+      width: fit-content;
+  }
+  .feature-box {
+    height: 107px;
+    width: 112px;
+    margin-left: 84px;
+  }
+  .fab-image{
+      margin-left: 0;
+  }
+  .img-fluid {
+      max-width: 100%;
+      height: auto;
+  }
+  .adv-info {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 465px) {
     html {
         font-size:14px
     }
+    .feature-box {
+      margin-left: 121px;
+      height: 107px;
+      width: 112px;
+  }
+    .i-frame{
+      width: 100px;
+      height: 100px;
+      border: 0;
+    }
 }
+
 
 body {
     background: var(--background)
@@ -952,6 +1074,8 @@ footer{
 }
 .fab-image{
     margin-left: 0;
+    width: 266px;
+
 }
 .img-fluid {
     max-width: 100%;
